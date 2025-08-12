@@ -57,7 +57,9 @@ public class Set {
 
     private static void findMinMax(int[] arr) {
         TreeSet<Integer> ts = new TreeSet<>();
-        for (int x : arr) ts.add(x);
+        for (int x : arr) {
+            ts.add(x);
+        }
 
         int min = ts.first();
         int max = ts.last();
